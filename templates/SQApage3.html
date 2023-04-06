@@ -1,0 +1,14 @@
+{% extends "SQAlayout.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+  <h1>Your results:</h1>
+
+<ul>
+ <li> Your first name is: {{ session['firstName'] }} </li>
+ <li> Your favorite color is: {{ session['favoriteColor'] }} </li>
+</ul>
+
+
+{% endblock %}

@@ -29,18 +29,12 @@ def renderPage1():
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
     session["firstName"]=request.form['firstName']
-    session["lastName"]=request.form['lastName']
     return render_template('SQApage2.html')
 
 @app.route('/page3',methods=['GET','POST'])
 def renderPage3():
     session["favoriteColor"]=request.form['favoriteColor']
     return render_template('SQApage3.html')
-    
-@app.route('/page4',methods=['GET','POST'])
-def renderPage3():
-    session["favoriteColor"]=request.form['favoriteColor']
-    return render_template('SQApage4.html')
     
 if __name__=="__main__":
     app.run(debug=False)
