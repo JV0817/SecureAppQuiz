@@ -13,7 +13,11 @@ div#footer {
     margin-top: 3em;
     padding: 1em;
 }
+
 p {
     text-align: center;
     font-size: 25px;
 }
+ h1 {
+     border: 4px inset blue;
+ }

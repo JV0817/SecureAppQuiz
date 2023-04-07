@@ -28,13 +28,15 @@ def renderPage1():
 
 @app.route('/page2',methods=['GET','POST'])
 def renderPage2():
-    session["firstName"]=request.form['firstName']
+    session["firstName"]=request.form['question1']
     return render_template('SQApage2.html')
 
 @app.route('/page3',methods=['GET','POST'])
 def renderPage3():
     session["favoriteColor"]=request.form['favoriteColor']
-    return render_template('SQApage3.html')
+    if session question1 == "59.6"
+        answer1 = "You answered: "
+    return render_template('SQApage3.html', result1 = answer1, result2 = answer2)
     
 if __name__=="__main__":
     app.run(debug=False)
